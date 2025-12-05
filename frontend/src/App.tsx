@@ -1,10 +1,19 @@
-function App() {
-  
+import { Routes, Route, Link } from 'react-router-dom'
+import Home from './views/Home'
+import About from './views/About'
 
+
+function App() {
   return (
-    <>
-      <h1>Hello worlds</h1>
-    </>
+    <div>
+      <nav>
+        <Link to="/">Home</Link> | <Link to="/about">About</Link>
+      </nav>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </div>
   )
 }
 
