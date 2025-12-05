@@ -1,0 +1,27 @@
+{
+  "name": "dxf-ai",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "dist/server.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node server.ts",
+    "start": "node dist/server.js",
+    "watch": "nodemon --watch '**/*.ts' --exec ts-node server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^24.10.1",
+    "nodemon": "^3.1.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1"
+  }
+}
